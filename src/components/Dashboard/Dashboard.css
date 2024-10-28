@@ -1,0 +1,178 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: black; /* Dashboard background */
+  color: #333;
+}
+
+/* Dashboard Container */
+.dashboard {
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px; /* Optional: Limit max width for better readability */
+  margin: auto; /* Center dashboard */
+  border-radius: 24px; /* Increased border radius */
+  background-color: #fff; /* White background for the dashboard */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+/* Metrics Section */
+.dashboard-metrics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-bottom: 40px;
+}
+
+/* Individual Metric Card */
+.metric-card {
+  background: #f0f4ff; /* Light blue background */
+  border-radius: 16px; /* More rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 30%; /* Allow flexible growth with a base width */
+  margin: 10px; /* Adjust margin for spacing */
+  min-width: 250px; /* Minimum width for cards */
+  transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.metric-card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Titles and Values for Metric Cards */
+.metric-card-title {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1.2rem; /* Adjusted font size */
+}
+
+.metric-card-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Section Styles */
+.section {
+  background: #fff;
+  border-radius: 16px; /* More rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure sections take full width */
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Increased border radius */
+  font-size: 1rem;
+  transition: border-color 0.2s; /* Smooth border color change */
+}
+
+.input-field:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+.submit-button {
+  padding: 12px;
+  background-color: #f8f9fa; /* Off-white background */
+  color: #333; /* Dark text for contrast */
+  border: none;
+  border-radius: 8px; /* Increased border radius */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s; /* Smooth background color change */
+}
+
+.submit-button:hover {
+  background-color: #e2e6ea; /* Slightly darker on hover */
+}
+
+/* Program Control Item Styles */
+.program-control-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.program-control-item button {
+  margin-left: 10px;
+  background-color: #f8f9fa; /* Off-white background */
+  color: #333; /* Dark text for contrast */
+  border: none;
+  border-radius: 8px; /* Increased border radius */
+  padding: 10px 15px; /* Added padding for buttons */
+  transition: background-color 0.2s; /* Smooth background color change */
+}
+
+.program-control-item button:hover {
+  background-color: #e2e6ea; /* Slightly darker on hover */
+}
+
+/* Alerts and Messages */
+.message, .alert {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.alert {
+  color: red;
+}
+
+/* Full-width adjustments */
+.full-width {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-metrics {
+    flex-direction: column; /* Stack metrics vertically on small screens */
+    align-items: center; /* Center align items */
+  }
+
+  .metric-card {
+    margin: 10px 0;
+    width: 90%; /* Ensure cards take a larger width */
+    max-width: none; /* Remove max width restriction */
+  }
+
+  .program-control-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+}

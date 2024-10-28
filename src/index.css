@@ -1,13 +1,40 @@
+/* Base Styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    sans-serif; /* Modern system fonts */
+  -webkit-font-smoothing: antialiased; /* Smooth fonts on webkit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smooth fonts on Firefox */
+  background-color: #f90d0d; /* Light background for better contrast */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6; /* Improved line height for better readability */
 }
 
+/* Code Styles */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace; /* Monospace font for code */
+  background-color: #050505; /* Light gray background for code blocks */
+  border-radius: 4px; /* Rounded corners for code blocks */
+  padding: 2px 4px; /* Padding around code text */
+  color: #c7254e; /* Code text color */
+}
+
+/* Additional Styles for Links */
+a {
+  color: #007bff; /* Primary link color */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+  color: #0056b3; /* Darker color on hover */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Slightly smaller font size on smaller screens */
+  }
 }

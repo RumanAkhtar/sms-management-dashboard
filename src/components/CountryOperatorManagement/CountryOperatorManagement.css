@@ -1,0 +1,22 @@
+/* CountryOperatorManagement.css */
+.country-operator-management {
+    padding: 20px;
+  }
+  
+  .country-operator-management h2 {
+    margin-bottom: 10px;
+  }
+  
+  .country-operator-management input {
+    margin-right: 5px;
+  }
+  
+  .country-operator-management ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .country-operator-management li {
+    margin: 5px 0;
+  }
+  
